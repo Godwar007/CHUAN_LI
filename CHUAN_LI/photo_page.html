@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./photo_style.css">
+    <link rel="icon" href="./image/Icon/logo.ico" type="image/x-icon">
+    <title>案例參考</title>
+</head>
+<style>
+    @media screen and (orientation: portrait) {
+        @media screen and (max-width: 500px){
+            img{width: 340px;height: 260px;}
+            .view{top: 30px;}
+            input{width: 80px;height: 30px;font-size: 12px;}
+            .photo_button{left: -20px;}
+            .close_button{left: 30px;}
+            .page_now{font-size: 15px;}
+        }
+    }
+    @media screen and (orientation: landscape) {/*針對橫向 css去撰寫*/
+        @media screen and (max-width: 1000px){
+           img{width: 320px;height: 240px;}
+          .view{top: 10px;}
+          input{width: 80px;height: 30px;font-size: 12px;}
+            .photo_button{left: -20px;}
+            .close_button{left: 30px;}
+            .page_now{font-size: 15px;}
+         }  
+    }
+</style>
+<body>
+    <div class="view"></div>
+    <div class="photo_button">
+        <input class="back_button" type="button" value="&nbsp< 上一頁&nbsp" onclick="back();">
+        <p class="page_now"></p>
+        <input class="next_button" type="button" value="&nbsp下一頁 >&nbsp" onclick="next();">
+        <input class="close_button" type="button" value="&nbsp返回 &nbsp" onclick="window.close();">
+    </div>
+</body>
+<script src="./photp_script.js"></script>
+</html>

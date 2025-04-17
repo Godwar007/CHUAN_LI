@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style.css">
+        <link rel="icon" href="./image/Icon/logo.ico" type="image/x-icon">
+    </head>
+    <style>
+      @media screen and (orientation: portrait) {
+          @media screen and (max-width: 500px){
+            .title_1{height: 100px;}
+            h1 {font-size:30px;}
+            h5 {top: 70px;left: 0px;font-size: 14px;text-align: center;}
+            .about{font-size: 20px;line-height: 30px;}
+            .home{top: 200px;}
+            a{font-size: 15px;height: 20px;width: 80px;}
+            div.home img{width: 250px;height: 250px;}
+            .bussiness ul{font-size: 20px;line-height: 30px;}
+            .bussiness ul li{font-size: 15px;line-height: 30px;}
+          }
+      }
+      @media screen and (orientation: landscape) {/*針對橫向 css去撰寫*/
+        @media screen and (max-width: 1000px){
+            .title_1{height: 70px;}
+            nav{height: 30px;}
+            h1 {font-size:25px;}
+            h5 {top: 45px;left: 100px;font-size: 14px;text-align: center;}
+            .about{font-size: 20px;line-height: 30px;}
+            .home{top: 150px;}
+            a{font-size: 15px;height: 20px;width: 80px;}
+            div.home img{width: 200px;height: 200px;}
+        }
+     }
+    </style>
+
+<header>    
+    <title>全利工程行</title>
+   <div class="title_1">
+        <h1>全 利 工 程 行</h1>
+        <h5>&diams;統包工程 &diams;室內裝潢 &diams;櫥櫃訂做 &diams;修繕工程 &diams;免費估價</h5>
+   </div>
+    <nav>
+            <div class="nav_text">
+              <a class="about_button" href="#">關於我們</a>
+              <a class="bussiness_button" href="#">營業項目</a>
+              <a class="photo_button" href="#">案例參考</a>
+              <a class="QA_button" href="#">問與答</a>
+              <!-- <a class="contact_button" href="#">聯絡我們</a>  -->
+            </div>  
+     </nav>
+</header>
+<body>
+  <img class="back_img" src="./image/back.jpg" alt="">
+   <div class="home"> </div>   
+</body>
+<footer>
+  <small>
+    <p class="foot">全&nbsp利&nbsp工&nbsp程&nbsp行 <br></p>
+    <p class="foot_1">政府立案 統編: 40642114 <br>TEL:  0918126527</p>
+  </small>
+</footer>
+<script src="./script.js"></script>
+
+
+</html>
